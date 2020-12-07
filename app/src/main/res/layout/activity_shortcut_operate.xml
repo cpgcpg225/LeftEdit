@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#F5F8FA">
+
+        <ImageView
+            android:id="@+id/iv_edit_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:src="@mipmap/icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/iv_edit_back"
+            android:text="编辑"
+            android:textColor="#193B60"
+            android:textDirection="locale"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_edit_save"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:gravity="center_vertical"
+            android:paddingEnd="16dp"
+            android:text="保存"
+            android:textColor="#193B60"
+            android:textDirection="locale"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dip13"
+        android:layout_marginBottom="@dimen/dip13" />
+
+</LinearLayout>

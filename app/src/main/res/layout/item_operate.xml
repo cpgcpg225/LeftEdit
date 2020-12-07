@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dip13"
+    android:layout_marginTop="8dp">
+
+    <ImageView
+        android:id="@+id/iv_shortcut_icon"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="@dimen/dip13"/>
+
+    <TextView
+        android:id="@+id/tv_shortcut_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_shortcut_icon"
+        android:layout_alignStart="@id/iv_shortcut_icon"
+        android:layout_alignEnd="@id/iv_shortcut_icon"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:maxLines="1"
+        android:textColor="#193B60"
+        android:textDirection="locale"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/iv_shortcut_operate"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="-10dp"
+        android:layout_marginTop="6dp"
+        android:layout_toEndOf="@id/iv_shortcut_icon" />
+
+</RelativeLayout>
